@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="box">
+    <form action="addFenlei.php" method="post">
+        <label>添加分类</label>
+        <select name="pid" id="">
+            <option value="0">一级栏目</option>
+            <?php echo $option?>
+        </select>
+
+    <div class="formGroup">
+        <label for="">栏目名称</label>
+        <input type="text" name="cname" placeholder="栏目名称">
+    </div>
+
+        <div class="formGroup">
+            <label for="">跳转页面</label>
+            <input type="text" name="template" placeholder="跳转页面">
+        </div>
+    <div class="formGroup">
+        <input type="submit" value="提交" name="sub">
+    </div>
+    </form>
+
+</div>
+</body>
+</html>

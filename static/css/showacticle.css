@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+.panel {
+    width: auto;
+    height: auto;
+    margin-top: 30px; }
+.panel .head {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px; }
+.panel .biaoge {
+    width: 90%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 0 auto; }
+.panel .biaoge table {
+    border: 1px solid; }
+.panel .biaoge td, .panel .biaoge th {
+    border: 1px solid #000;
+    text-align: center; }
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}

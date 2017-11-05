@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="/project1/static/css/index.css">
+    <link rel="stylesheet" href="/project1/static/iconfont/iconfont.css">
+    <link rel="stylesheet" href="/project1/static/iconfont1/iconfont.css">
+    <script src="/project1/static/js/jquery.js"></script>
+    <script src="/project1/static/js/index.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<header>
+    <div class="name">爱尚摄影</div>
+    <ul class="daohang">
+        <li class="lis"><a href="index.php">首页</a>
+            <div class="hengxian"></div></li>
+
+        <?php
+       for($i=0;$i<count($nav);$i++){
+         ?>
+
+        <li class="lis">
+            <a href="list.php?cid=<?php echo $nav[$i]['cid']; ?>"><?php echo $nav[$i]['cname'];?></a>
+
+        </li>
+
+        <?php
+        }
+        ?>
+
+
+
+
+        <!--<li class="lis">-->
+            <!--<a href="list1.html" class="ab">摄影资讯</a>-->
+
+        <!--</li>-->
+        <!--<li class="lis">-->
+            <!--<a href="jiqiao.html" class="ab">摄影技巧</a>-->
+
+        <!--</li>-->
+        <!--<li class="lis">-->
+            <!--<a href="zuopin.html" class="ab">摄影作品</a>-->
+
+        <!--</li>-->
+        <!--<li class="lis">-->
+            <!--<a href="bisai.html" class="ab">摄影比赛</a>-->
+
+        <!--</li>-->
+        <!--<li class="lis">-->
+            <!--<a href="lianxi.html" class="ab">联系我们</a>-->
+
+        <!--</li>-->
+    </ul>
+</header>

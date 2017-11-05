@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="/project1/static/css/jiqiao.css">
+<script src="/project1/static/js/jiqiao.js"></script>
+<!--技巧开始-->
+<section class="jiqiao-box">
+    <ul class="jiqiao">
+        <?php
+     for($i=0;$i<count($wenzhang);$i++){
+?>
+        <li><a href="">
+            <div class="tupian">
+                <img src="<?php echo $wenzhang[$i]['thumb'];?>" alt="">
+            </div>
+            <div class="zhengwen">
+                <span class="title"><?php echo $wenzhang[$i]['title'];?></span>
+                <span class="neirong"><?php echo $wenzhang[$i]['description'];?></span>
+            </div>
+        </a></li>
+        <?php }?>
+
+    </ul>
+</section>
+<!--技巧结束-->
+<!--底部开始-->
+<footer>
+    <div class="dibu">
+        <div class="dibu-left">
+            <div class="dibu-left-left">爱尚摄影</div>
+            <!--<div class="dibu-icon">-->
+            <!--<a href="" class="iconfont icon-facebookf"></a>-->
+            <!--<a href="" class="iconfont icon-tuite"></a>-->
+            <!--<a href="" class="iconfont icon-leaf"></a>-->
+            <!--</div>-->
+            <span class="dibuwenzi">Aenean vitae metus sit amet purus sodales blandit. Nullam ut dolor eu urna viverra semper. Mauris est odio, laoreet laoreet sapien non, sollicitudin bibendum nulla.</span>
+        </div>
+        <div class="dibu-right">
+            <div class="db1">
+                <dl class="dibu-right-title1">QUICK LINKS</dl>
+                <dd><a href="index.html">首页</a></dd>
+                <dd><a href="zixun.html">摄影资讯</a></dd>
+                <dd><a href="jiqiao.html">摄影技巧</a></dd>
+                <dd><a href="zuopin.html">摄影作品</a></dd>
+                <dd><a href="bisai.html">摄影比赛</a></dd>
+                <dd><a href="lianxi.html">联系我们</a></dd>
+            </div>
+            <div class="db2">
+                <dl class="dibu-right-title2">CONTACT INFO</dl>
+                <dd>123 Broome St,2nd Block</dd>
+                <dd>NY 10002, New York摄影资讯</dd>
+                <dd>Phone: +01 111 222 3333</dd>
+                <dd>mail@example.com</dd>
+            </div>
+        </div>
+    </div>
+    </div>
+    <span class="dibu-bottom">&copy 2017 Holiday Spot . All rights reserved | Design by W3layouts.</span>
+</footer>
+<!--底部结束-->
+
+
+</body>
+</html>
+<script src="js/jiqiao.js"></script>

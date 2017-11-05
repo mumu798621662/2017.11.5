@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="box">
+    <form action="updateArticle1.php" method="post">
+        <label>父级栏目</label>
+        <select name="pid" id="" >
+            <option value="0">一级栏目</option>
+            <?php echo $trs?>
+        </select>
+
+        <div class="formGroup">
+
+            <input type="text" name="title" placeholder="标题" value="<?php echo $title;?>">
+        </div>
+        <div class="formGroup">
+
+            <textarea  name="description" placeholder="简介" value="<?php echo $description;?>"></textarea>
+        </div>
+
+        <div class="formGroup">
+
+            <input type="text" name="times" placeholder="时间" value="<?php echo $times;?>">
+        </div>
+
+        <div class="formGroup">
+
+            <input type="text" name="author" placeholder="作者" value="<?php echo $author;?>">
+        </div>
+
+        <div class="formGroup">
+
+            <input type="text" name="editor" placeholder="编辑" value="<?php echo $editor;?>">
+        </div>
+
+        <div class="formGroup">
+
+            <input type="text" name="origin" placeholder="来源" value="<?php echo $origin;?>">
+        </div>
+
+        <div class="formGroup">
+
+            <textarea  name="content" placeholder="简介" value="<?php echo $content;?>"></textarea>
+        </div>
+
+        <div class="formGroup">
+
+            <input type="text" name="ends" placeholder="截稿时间" value="<?php echo $ends;?>">
+        </div>
+
+        <div class="formGroup">
+
+            <input type="file" name="img" placeholder="图片" value="<?php echo $thumb;?>">
+        </div>
+
+        <div class="formGroup">
+            <input type="submit" value="提交" name="sub">
+        </div>
+    </form>
+
+</div>
+</body>

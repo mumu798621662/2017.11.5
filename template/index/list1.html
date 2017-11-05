@@ -1,0 +1,30 @@
+
+    <link rel="stylesheet" href="/project1/static/css/zixun.css">
+    <script src="/project1/static/js/zixun.js"></script>
+<!--资讯开始-->
+<section class="zixun">
+ <ul class="zixun-box">
+     <?php
+     for($i=0;$i<count($wenzhang);$i++){
+?>
+     <li><a href="zixunxiangqing.html">
+         <div class="zhezhao">
+             <div class="xian1"></div>
+             <div class="xian2"></div>
+             <div class="xian3"></div>
+             <div class="xian4"></div>
+         </div>
+
+         <div class="tupian">
+             <div class="tupianbox">
+
+                 <img src="<?php echo $wenzhang[$i]['thumb'];?>" alt=""></div>
+             <span class="title"><?php echo $wenzhang[$i]['title'];?></span>
+             <span class="neirong"><?php echo $wenzhang[$i]['description'];?></span>
+         </div>
+     </a></li>
+
+     <?php }?>
+ </ul>
+</section>
+<!--资讯结束-->

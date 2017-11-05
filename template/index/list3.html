@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/project1/static/css/zuopin.css">
+<script src="/project1/static/js/zuopin.js"></script>
+<!--分类结束-->
+<!--列表开始-->
+<section class="liebiao">
+    <ul class="zixun-box">
+        <?php
+     for($i=0;$i<count($wenzhang);$i++){
+?>
+        <li><a href="zuopinxiangqing.html">
+            <div class="tupian">
+                <img src="<?php echo $wenzhang[$i]['thumb'];?>" alt="">
+                <span class="title"><?php echo $wenzhang[$i]['title'];?></span>
+            </div>
+        </a></li>
+        <?php }?>
+    </ul>
+</section>
+<!--列表结束-->
+

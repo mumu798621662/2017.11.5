@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="box">
+    <form action="updates.php" method="post">
+        <label>父级栏目</label>
+        <select name="pid" id="" >
+            <option value="0">一级栏目</option>
+            <?php echo $trs?>
+        </select>
+
+        <div class="formGroup">
+
+            <input type="text" name="cname" placeholder="栏目名称" value="<?php echo $cname;?>">
+        </div>
+        <div class="formGroup">
+
+            <input type="hidden" name="cid" placeholder="栏目父id" value="<?php echo $cid;?>">
+        </div>
+        <div class="formGroup">
+            <input type="submit" value="提交" name="sub">
+        </div>
+    </form>
+
+</div>
+</body>

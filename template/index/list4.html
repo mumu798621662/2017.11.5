@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/project1/static/css/bisai.css">
+    <script src="/project1/static/js/bisai.js"></script>
+
+<!--比赛开始-->
+<section class="bisai">
+    <ul class="bisai-box">
+        <?php
+     for($i=0;$i<count($wenzhang);$i++){
+?>
+        <li>
+            <div class="zhezhao"></div>
+            <div class="imgbox">
+                <img src="<?php echo $wenzhang[$i]['thumb'];?>" alt=""></div>
+            <div class="title"><?php echo $wenzhang[$i]['title'];?></div>
+            <div class="neirong"><?php echo $wenzhang[$i]['description'];?></div>
+            <div class="shijian"><?php echo $wenzhang[$i]['ends'];?></div>
+        </li>
+        <?php }?>
+    </ul>
+</section>
+<!--比赛结束-->
